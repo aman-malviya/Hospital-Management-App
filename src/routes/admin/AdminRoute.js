@@ -9,7 +9,7 @@ function AdminRoute({component: Component, ...rest }) {
         <Route
             {...rest}
             render={props => {
-                return currentUser !== null && (currentUser.uid).includes('kpmN5fDhOoTBge39m6FZ7AiHhY33')
+                return currentUser !== null && (currentUser.uid).includes('k2X74xCuZKUUOu88JAiWlk4sRPI2')
                 ? <Component {...props}  /> 
                 : <Redirect to="/patient" />
             }}

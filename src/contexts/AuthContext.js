@@ -20,6 +20,7 @@ const signup = async(email, password, firstName, lastName, phone) => {
 const drSignup = async(email, password, drName ) => {
     return createUserWithEmailAndPassword(auth, email, password)
     .then((res) => {
+        
         return updateProfile(res.user, {
             displayName: `${drName}`,
         })

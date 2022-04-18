@@ -3,7 +3,7 @@ import { getFirestore } from "@firebase/firestore";
 import { getAuth } from "firebase/auth";
 
 const app = initializeApp({
-    apiKey: "AIzaSyBPpd7CjFq2W_aPH21Xz_XKNxfUaRppUDU",
+  apiKey: "AIzaSyBPpd7CjFq2W_aPH21Xz_XKNxfUaRppUDU",
   authDomain: "hms-manit.firebaseapp.com",
   projectId: "hms-manit",
   storageBucket: "hms-manit.appspot.com",

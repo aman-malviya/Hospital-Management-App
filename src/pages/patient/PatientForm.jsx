@@ -122,7 +122,7 @@ const PatientForm = () => {
                                                     name: cur.name, 
                                                     specialization: cur.specialization,
                                                     roomNumber: cur.roomNumber,
-                                                    uid: cur.id
+                                                    uid: cur.email
                                                 }
                                                 setDoctorID(newDoctor.uid)
                                                 setRoom(Number(newDoctor.roomNumber))

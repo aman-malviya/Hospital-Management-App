@@ -112,12 +112,12 @@ export default function DbProvider({ children }) {
     }
 
     const fetchDoctorAppointments = async() => {
-        const data = await getDocs(query(appointmentsCollectionRef, where("doctorID", "==", `${currentUser && currentUser.uid}`)));
+        const data = await getDocs(query(appointmentsCollectionRef, where("doctorID", "==", `${currentUser && currentUser.email}`)));
         setDoctorAppointments(data.docs.map((doc) => ({...doc.data(), id: doc.id})));
     }
 
     const fetchDoctorPrescriptions = async() => {
-        const data = await getDocs(query(prescriptionsCollectionRef, where("doctorID", "==", `${currentUser && currentUser.uid}`)));
+        const data = await getDocs(query(prescriptionsCollectionRef, where("doctorID", "==", `${currentUser && currentUser.email}`)));
         setDoctorPrescriptions(data.docs.map((doc) => ({...doc.data(), id: doc.id})));
     }
 
